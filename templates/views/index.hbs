@@ -1,0 +1,89 @@
+{{!
+< default}} <div class="container">
+	<div class="hero-container">
+		<div class="hero-text">> Mark O'Reilly <i class="pointer"></i></div>
+		<div class="hero-description">I'm a web developer based in Dublin Ireland. I love building web apps that add value. Check
+			out some of my projects below.
+		</div>
+	</div>
+
+	<div class="about-container">
+		<div class="terminal">
+			<div class="terminal-header">
+				<div class="header-button red"></div>
+				<div class="header-button yellow"></div>
+				<div class="header-button green"></div>
+			</div>
+			<div class="terminal-window">
+				<div class="statement">
+					<div class="input-statement">Mark.location</div>
+					<div class="return-statement">"Dublin, Ireland"</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.contact</div>
+					<div class="return-statement">
+						["<a href="mailto:mark@markoreilly.xyz">mark@markoreilly.xyz</a>
+						",
+						<a href="https://www.linkedin.com/in/markoreilly2/">LinkedIn</a>
+						",
+						<a rel="noopener" href="https://github.com/oreilm49">github</a>"]
+					</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.resume</div>
+					<div class="return-statement">"<a href="/markoreilly.pdf">markoreilly.pdf</a>"</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.interests</div>
+					<div class="return-statement">["technology", "fitness", "learning", "business"]</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.education</div>
+					<div class="return-statement">"Bachelors Of Business - Dublin City University"</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.skills.development</div>
+					<div class="return-statement">
+						["Javascript","Angular","Python","Keystonejs","Expressjs","Python","Mongodb","MySQL"]
+					</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement">Mark.skills.design</div>
+					<div class="return-statement">["inDesign","Photoshop","Illustrator","HTML","CSS"]</div>
+				</div>
+				<div class="statement">
+					<div class="input-statement"><i class="pointer-small"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 id="projects" class="section-title">Projects</h2>
+	<div class="projects-container">
+		{{#each Project}}
+		<div class="project-card">
+			<img src="{{image.url}}" alt="" class="project-image">
+			<div class="project-background"></div>
+			<div class="project-content">
+				<h3>{{title}}</h3>
+				<p>{{short_description}}</p>
+				<div class="project-skills">
+					{{# each technologies}}
+					<span class="project-skill">{{this}}</span>
+					{{/each}}
+				</div>
+				<div class="project-links">
+						<div class="image-gallery-{{_id}}">
+							<a class="project-link {{title}}" href="{{images.1.url}}">View Gallery</a>
+							{{#each images}}
+							<a href="{{url}}"></a>
+							{{/each}}
+						</div>	
+					<a href="{{github}}" class="project-link secondary"><i class="fab fa-github"></i> View Source</a>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+
+	</div>
+	</div>
