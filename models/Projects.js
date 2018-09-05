@@ -14,7 +14,8 @@ Project.add({
 	technologies: { type: Types.TextArray },
 	short_description: { type: String },
 	description: { type: String },
-	images: {type: Types.CloudinaryImages}
+	images: {type: Types.CloudinaryImages},
+	sortOrder: {type: Number}
 	}
 	);
 
