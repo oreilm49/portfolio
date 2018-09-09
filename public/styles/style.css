@@ -110,6 +110,7 @@ body > nav > div > ul.right.hide-on-med-and-down > li > a {
 	font-family: Monaco,Consolas,Lucida Console,monospace;
 	padding-top: 35px;
 	padding-bottom: 25px;
+
 }
 
 .about-container .terminal .terminal-window .statement {
@@ -259,3 +260,44 @@ body > nav > div > ul.right.hide-on-med-and-down > li > a {
 	background: #fff;
 	color: #0288D1;
 }
+
+/* Mobile Screens */
+
+/* Fix project image shrinking */
+
+@media only screen and (max-width: 850px) {
+    .projects-container .project-card .project-image {
+		height: 100%;
+		width: auto;
+		position: absolute!important;
+		top: 0;
+		left: 0;
+	}
+}
+
+/*Hide image container*/
+
+@media only screen and (max-width: 650px) {
+    .projects-container .project-card img {
+		display: none;
+	}
+
+	.projects-container .project-card .project-background {
+		display: none;
+	}
+
+	.projects-container .project-card .project-content {
+		width: 100%;
+	}
+	
+}
+
+/*fix flickering cursor*/
+@media only screen and (max-width: 680px) {
+	.hero-container .pointer {
+		display: none;
+	}
+}
+
+
+
