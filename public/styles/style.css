@@ -261,6 +261,18 @@ body > nav > div > ul.right.hide-on-med-and-down > li > a {
 	color: #0288D1;
 }
 
+.pointer-small {
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: white;
+    animation-name: blink;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    margin-top: 6px;
+}
+
 /* Mobile Screens */
 
 /* Fix project image shrinking */
@@ -289,7 +301,7 @@ body > nav > div > ul.right.hide-on-med-and-down > li > a {
 	.projects-container .project-card .project-content {
 		width: 100%;
 	}
-	
+
 }
 
 /*fix flickering cursor*/
