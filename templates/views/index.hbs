@@ -85,8 +85,12 @@
 							{{#each images}}
 							<a href="{{url}}"></a>
 							{{/each}}
-						</div>	
-					<a href="{{github}}" class="project-link secondary"><i class="fab fa-github"></i> View Source</a>
+						</div>
+					{{#if github}}
+						<a href="{{github}}" class="project-link secondary"><i class="fab fa-github"></i> View Source</a>
+					{{else if domain }}
+						<a href="{{domain}}" class="project-link secondary"><i class="fa fa-eye"></i> View Site</a>
+					{{/if}}
 				</div>
 			</div>
 		</div>
