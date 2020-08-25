@@ -21,6 +21,5 @@ exports = module.exports = function (app) {
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 	app.use('/api', api)
-	app.use('/markoreilly.pdf', express.static(__dirname + '/cv_markoreilly_sep18.pdf'));
-
+	app.use('/markoreilly.pdf', express.static(__dirname + '/markoreilly.pdf'));
 };
